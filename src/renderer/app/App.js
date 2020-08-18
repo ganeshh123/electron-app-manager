@@ -1,6 +1,7 @@
 import React from "react";
 import { CssBaseline, ThemeProvider, IconButton } from "@material-ui/core";
 import { Close, Remove, Crop54 } from '@material-ui/icons';
+import AppContainer from './AppContainer'
 import theme from "./theme";
 
 export default function App() {
@@ -21,7 +22,7 @@ export default function App() {
           </div>
         </header>
         <div id='appContainer'>
-          <h1>Electron App Manager</h1>
+          <AppContainer />
         </div>
       </div>
     </ThemeProvider>
