@@ -1,4 +1,3 @@
-
 let fileSystem = require('fs')
 let path = require('path')
 let folder_empty = require('./folder_empty')
@@ -11,7 +10,11 @@ let removeDir = (targetPath, exclusions) => {
 
         /* Ensure that files from exclusions array are not deleted */
         let filesToDelete = fileSystem.readdirSync(targetPath).filter((file) => {
-                return !exclusions.includes(file)
+                if(exclusions){
+                    return !exclusions.includes(file)
+                }else{
+                    return file
+                }
             }
         )
 
