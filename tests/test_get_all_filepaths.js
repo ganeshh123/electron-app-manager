@@ -1,4 +1,3 @@
-let fs = require('fs')
 let path = require('path')
 let getAllFilePaths = require('../src/renderer/utils/get_all_filepaths')
 
