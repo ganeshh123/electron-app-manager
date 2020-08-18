@@ -19,7 +19,9 @@ function createMainWindow() {
   });
 
   if (isDevelopment) {
-    window.webContents.openDevTools({mode:'undocked'})
+    let devtools = new BrowserWindow()
+    window.webContents.setDevToolsWebContents(devtools.webContents)
+    window.webContents.openDevTools({ mode: 'detach' })
     window.loadURL(`http://localhost:${process.env.ELECTRON_WEBPACK_WDS_PORT}`);
   } else {
     window.loadURL(
