@@ -15,7 +15,7 @@ export default function App() {
             <span id='windowTitleText'>Electron App Manager</span>
           </div>
           <div id="windowControls">
-          <IconButton id="closeButton" class="windowButton" component='span' disableRipple >
+          <IconButton id="closeButton" className="windowButton" component='span' disableRipple >
             <Close />
           </IconButton>
           </div>

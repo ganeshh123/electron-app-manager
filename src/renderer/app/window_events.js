@@ -11,6 +11,8 @@ module.exports = () => {
         win.destroy()
     });
 
+    /*
+
     document.querySelector('#minimizeButton').addEventListener("click", (event) =>{
         win.minimize()
         window.location.hash = '#appContainer'
@@ -28,4 +30,6 @@ module.exports = () => {
 
         window.location.hash = '#appContainer'
     });
+
+    */
 }
