@@ -98,17 +98,17 @@ body,
 
 #closeButton {
   grid-column: 3;
-  border-top-right-radius: 5px;
+  border-top-right-radius: 50%;
 }
 
 #closeButton:hover{
   background: #F1707A !important;
-  border-top-right-radius: 5px;
+  border-top-right-radius: 50%;
 }
 
 #closeButton:active{
   background: #F1707A !;
-  border-top-right-radius: 5px;
+  border-top-right-radius: 50%;
 }
 
 #windowTitle {
