@@ -1,0 +1,32 @@
+{
+  "author": {
+    "name": "Ganesh H",
+    "email": "https://ganeshh123.github.io"
+  },
+  "bundleDependencies": false,
+  "dependencies": {
+    "@material-ui/core": "^4.11.0",
+    "@material-ui/icons": "^4.9.1",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "source-map-support": "^0.5.19",
+    "typeface-roboto": "^0.0.75"
+  },
+  "deprecated": false,
+  "description": "A Windows App to manage storage for Electron Applications.",
+  "devDependencies": {
+    "@babel/preset-react": "^7.10.4",
+    "electron": "^9.1.1",
+    "electron-builder": "^22.8.0",
+    "electron-webpack": "^2.8.2",
+    "webpack": "^4.44.0"
+  },
+  "name": "electron-app-manager",
+  "scripts": {
+    "compile": "electron-webpack",
+    "dev": "electron-webpack dev",
+    "dist": "yarn compile && electron-builder",
+    "dist:unpacked": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+  },
+  "version": "1.0.0"
+}
