@@ -7,14 +7,26 @@ let ps = require('ps-node')
 let killProcess = (processName, callback) => {
 
     let resultList = ps.lookup({command: processName}, (error, resultList) => {
+
+        if(error){
+            console.log(error)
+        }
         
+        if(!resultList || !resultList[0]){
+            return callback('Process not running')
+        }
+
         let pid = resultList[0]['pid']
+
+        if(!pid){
+            callback('Error')
+        }
 
         try{
             process.kill(pid)
-            callback('Process killed')
+            return callback('Process killed')
         }catch{
-            callback('Error')
+            return callback('Error')
         }
     })
 
