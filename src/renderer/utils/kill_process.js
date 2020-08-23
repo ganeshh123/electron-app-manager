@@ -4,9 +4,12 @@ let ps = require('ps-node')
 
 // processName = name of process to be killed (eg: Discord.exe)
 // callback = callback function to run, which takes in a string once completed
+//                  'Process not running' -> process is not running
+//                  'Process killed' -> kill signal sent successfully
+//                  'Error' -> Error occured
 let killProcess = (processName, callback) => {
 
-    let resultList = ps.lookup({command: processName}, (error, resultList) => {
+    ps.lookup({command: processName}, (error, resultList) => {
 
         if(error){
             console.log(error)
