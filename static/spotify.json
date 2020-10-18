@@ -1,0 +1,29 @@
+{
+    "name": "spotify",
+    "fullName": "Spotify",
+    "process": "spotify.exe",
+    "caches": {
+      "local": [],
+      "roaming": [
+          "Cache",
+          "Code Cache",
+          "GPU Cache"
+      ]
+    },
+    "data": {
+      "local": [],
+      "roaming": [
+          ".."
+      ]
+    },
+    "location": {
+      "roaming": "update.exe"
+    },
+    "programFiles": [
+        "update.exe",
+        "SquirrelSetup.log",
+        "app.ico",
+        "packages"
+    ]
+  }
+  

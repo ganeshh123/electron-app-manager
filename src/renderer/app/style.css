@@ -19,7 +19,7 @@ body,
   /*border: 1px solid #48545c;*/
   overflow-y: hidden;
   background-color: rgba(48,48,48,0.97);
-  border-radius: 5px;
+  border-radius: 10px;
 }
 
 #titlebar {
@@ -30,8 +30,8 @@ body,
   width: 100%;
   /*background: #254053; */
   padding: 4px;
-  border-top-right-radius: 5px;
-  border-top-left-radius: 5px;
+  border-top-right-radius: 10px;
+  border-top-left-radius: 10px;
 }
 
 #appContainer {
@@ -41,8 +41,8 @@ body,
   height: calc(100% - 32px);
   margin-top: 32px;
   overflow-y: auto;
-  border-bottom-right-radius: 5px;
-  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
   padding: 10px;
 }
 
@@ -98,17 +98,21 @@ body,
 
 #closeButton {
   grid-column: 3;
-  border-top-right-radius: 50%;
+  border-radius: 0px;
+  border-top-right-radius: 10px;
 }
 
 #closeButton:hover{
   background: #F1707A !important;
-  border-top-right-radius: 50%;
+  border-radius: 0px;
+  border-top-right-radius: 10px;
+  border-bottom-left-radius: 10px;
 }
 
 #closeButton:active{
   background: #F1707A !;
-  border-top-right-radius: 50%;
+  border-radius: 0px;
+  border-top-right-radius: 10px;
 }
 
 #windowTitle {
