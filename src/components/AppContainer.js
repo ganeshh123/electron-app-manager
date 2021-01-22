@@ -7,11 +7,11 @@ import AppSelector from './AppSelector'
 import AppPanel from '../components/AppPanel';
 
 /* Utility Import */
-let readAppDetails = require('../utils/read_app_details')
+let readAllAppDetails = require('../utils/read_all_app_details')
 
 export default class AppContainer extends Component {
 
-    appDetails = readAppDetails()
+    appDetails = readAllAppDetails()
 
     state = {
         alerts: {},

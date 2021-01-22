@@ -1,7 +1,7 @@
 let fileSystem = require('fs')
 let path = require('path')
 
-let readAppDetails = () => {
+let readAllAppDetails = () => {
 
     let staticPath = path.join(__static)
 
@@ -28,4 +28,4 @@ let readAppDetails = () => {
 
 }
 
-module.exports = readAppDetails
+module.exports = readAllAppDetails

@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
+import AppDetails from './AppDetails'
+let getAppDetailsByName = require('../utils/get_app_details_by_name')
 
 export default class AppPanel extends Component {
 
-    app = this.props.app
+    app = getAppDetailsByName(this.props.app)
 
     render() {
 
@@ -11,7 +13,7 @@ export default class AppPanel extends Component {
 
         return (
             <div>
-                
+                <AppDetails app={this.props.app} />
             </div>
         )
     }
