@@ -1,7 +1,7 @@
 import React from "react";
 import { CssBaseline, ThemeProvider, IconButton } from "@material-ui/core";
 import { Close, Remove, Crop54 } from '@material-ui/icons';
-import AppContainer from './AppContainer'
+import AppContainer from '../components/AppContainer'
 import theme from "./theme";
 
 export default function App() {

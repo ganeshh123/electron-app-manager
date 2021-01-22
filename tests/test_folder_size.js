@@ -1,5 +1,5 @@
 let path = require('path')
-let folderSize = require('../src/renderer/utils/folder_size')
+let folderSize = require('../src/utils/folder_size')
 
 let targetPath = path.join(__dirname, '..', 'static', '/Code Cache')
 

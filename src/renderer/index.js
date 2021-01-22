@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import App from "./app/App";
+import App from "./App";
 import "typeface-roboto/index.css";
-import "./app/style.css";
+import "../assets/style.css";
 
-let window_events = require('./app/window_events')
+let window_events = require('./window_events')
 
 ReactDOM.render(<App />, document.getElementById("app"));
 

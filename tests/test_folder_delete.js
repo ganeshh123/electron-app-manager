@@ -1,6 +1,6 @@
 let fs = require('fs')
 let path = require('path')
-let removeDir = require('../src/renderer/utils/folder_delete')
+let removeDir = require('../src/utils/folder_delete')
 
 let targetPath = path.join(__dirname, '..', 'static', '/Code Cache')
 

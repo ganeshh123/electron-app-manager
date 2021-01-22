@@ -1,5 +1,5 @@
 let path = require('path')
-let getAllFilePaths = require('../src/renderer/utils/get_all_filepaths')
+let getAllFilePaths = require('../src/utils/get_all_filepaths')
 
 let targetPath = path.join(__dirname, '..', 'static', '/Code Cache')
 

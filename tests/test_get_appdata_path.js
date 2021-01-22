@@ -1,4 +1,4 @@
-let getAppDataPath = require('../src/renderer/utils/get_appdata_path')
+let getAppDataPath = require('../src/utils/get_appdata_path')
 
 console.log('Get Appdata Path Local Returns:')
 console.log(getAppDataPath('local'))

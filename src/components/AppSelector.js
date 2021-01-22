@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { CssBaseline, ThemeProvider, IconButton } from "@material-ui/core";
-import theme from "./theme";
+import theme from "../renderer/theme";
 import InputLabel from '@material-ui/core/InputLabel';
 import MenuItem from '@material-ui/core/MenuItem';
 import FormHelperText from '@material-ui/core/FormHelperText';

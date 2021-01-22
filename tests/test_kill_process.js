@@ -1,4 +1,4 @@
-let killProcess = require('../src/renderer/utils/kill_process')
+let killProcess = require('.../src/utils/kill_process')
 
 console.log('Result for attempt to kill discord process : ')
 

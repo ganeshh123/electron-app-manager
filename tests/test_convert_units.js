@@ -1,4 +1,4 @@
-let convertUnits = require('../src/renderer/utils/convert_units')
+let convertUnits = require('../src/utils/convert_units')
 
 console.log(convertUnits(500, 'b', 'b', 4))
 console.log(convertUnits(2000, 'b', 'kb', 4))
