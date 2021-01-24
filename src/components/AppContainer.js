@@ -5,6 +5,7 @@ import theme from "../renderer/theme";
 /* Component Import */
 import AppSelector from './AppSelector'
 import AppPanel from '../components/AppPanel';
+import getAppDetailsByName from '../utils/get_app_details_by_name';
 
 /* Utility Import */
 let readAllAppDetails = require('../utils/read_all_app_details')
@@ -23,12 +24,9 @@ export default class AppContainer extends Component {
         this.setState({
             selectedApp: appName
         })
-    }   
-
+    }
 
     render = () => {
-
-        console.log(this.appDetails)
 
         return (
             <div id="appContainer">
@@ -37,7 +35,7 @@ export default class AppContainer extends Component {
                 handler={this.switchApp} 
                 appDetails={this.appDetails}
                 />
-                <AppPanel app={this.state.selectedApp} />
+                <AppPanel selectedApp={this.state.selectedApp} />
             </div>
         )
     }

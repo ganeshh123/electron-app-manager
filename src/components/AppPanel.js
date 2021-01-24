@@ -4,16 +4,13 @@ let getAppDetailsByName = require('../utils/get_app_details_by_name')
 
 export default class AppPanel extends Component {
 
-    app = getAppDetailsByName(this.props.app)
-
     render() {
 
-        let app = this.app
-        console.log(app)
+        let appInfo = getAppDetailsByName(this.props.selectedApp)
 
         return (
             <div>
-                <AppDetails app={this.props.app} />
+                <AppDetails appInfo={appInfo} />
             </div>
         )
     }

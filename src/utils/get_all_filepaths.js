@@ -8,6 +8,9 @@ let filePaths = []
 // targetPath = folder to get all filepaths from
 let getAllFilePaths = (targetPath) => {
 
+  if(!fileSystem.existsSync(targetPath)){
+    return filePaths
+  }
   let files = fileSystem.readdirSync(targetPath)
 
   files.forEach((fileName) => {

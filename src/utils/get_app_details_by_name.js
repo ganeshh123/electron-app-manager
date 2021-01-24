@@ -5,6 +5,8 @@ let path = require('path')
 
 let getAppDetailsByName = (appName) => {
 
+    console.log(appName)
+
     let filePath = path.join(__static, appName + '.json')
     let rawData = fileSystem.readFileSync(filePath)
 

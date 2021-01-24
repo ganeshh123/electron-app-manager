@@ -3,11 +3,12 @@
     "fullName": "Spotify",
     "process": "spotify.exe",
     "caches": {
-      "local": [],
+      "local": [
+        "Spotify/Browser/Cache",
+        "Spotify/Browser/Code Cache",
+        "Spotify/Browser/GPUCache"
+      ],
       "roaming": [
-          "Cache",
-          "Code Cache",
-          "GPU Cache"
       ]
     },
     "data": {
