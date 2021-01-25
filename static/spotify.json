@@ -2,7 +2,7 @@
     "name": "spotify",
     "fullName": "Spotify",
     "process": "spotify.exe",
-    "caches": {
+    "cache": {
       "local": [
         "Spotify/Browser/Cache",
         "Spotify/Browser/Code Cache",
@@ -12,9 +12,15 @@
       ]
     },
     "data": {
+      "local": [
+        "Spotify"
+      ],
+      "roaming": []
+    },
+    "install": {
       "local": [],
       "roaming": [
-          ".."
+        "Spotify"
       ]
     },
     "location": {

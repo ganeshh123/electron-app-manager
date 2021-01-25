@@ -2,7 +2,7 @@
   "name": "discord",
   "fullName": "Discord",
   "process": "Discord.exe",
-  "caches": {
+  "cache": {
     "local": [],
     "roaming": [
         "discord/Cache",
@@ -13,19 +13,19 @@
   "data": {
     "local": [],
     "roaming": [
-        ".."
+        "discord"
     ]
   },
+  "install": {
+    "local": [
+      "Discord"
+    ],
+    "roaming": []
+  },
   "location": {
-    "local": "update.exe"
+    "local": "discord/update.exe"
   },
   "startArguments": {
     
-  },
-  "programFiles": [
-      "update.exe",
-      "SquirrelSetup.log",
-      "app.ico",
-      "packages"
-  ]
+  }
 }

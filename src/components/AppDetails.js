@@ -1,11 +1,17 @@
 import React, { Component } from 'react'
-let calculateAppSize = require('../utils/calculate_app_size')
+let calculateAppSizes = require('../utils/calculate_app_sizes')
+let convertUnits = require('../utils/convert_units')
 
 export default class AppDetails extends Component {
 
     render() {
 
-        calculateAppSize(this.props.appInfo)
+        let appSizes = calculateAppSizes(this.props.appInfo)
+        Object.keys(appSizes).forEach((sizeType) => {
+            appSizes[sizeType] = convertUnits( appSizes[sizeType],  'b', 'mb', 2) + 'mb'
+        })
+
+        console.log(appSizes)
 
         return (
             <div>
