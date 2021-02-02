@@ -7,6 +7,7 @@ export default class AppPanel extends Component {
     render() {
 
         let appInfo = getAppDetailsByName(this.props.selectedApp)
+        console.log(appInfo)
 
         return (
             <div>

@@ -21,6 +21,7 @@ export default class AppContainer extends Component {
 
     switchApp = (event) => {
         let appName = event.target.value
+        event.currentTarget.blur()
         this.setState({
             selectedApp: appName
         })

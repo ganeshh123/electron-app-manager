@@ -3,7 +3,12 @@ let componentSize = require('./component_size')
 /* Calculates an app's install, data and cache size in bytes */
 let calculateAppSizes = (appInfo) => {
 
-    let sizes = {}
+    let sizes = {
+        'cache': 'Calculating...',
+        'data': 'Calculating...',
+        'install': 'Calculating...',
+        'totalSize': 'Calculating...',
+    }
 
     sizes['cache'] = componentSize(appInfo, 'cache')
     sizes['data'] = componentSize(appInfo, 'data')
