@@ -1,16 +1,35 @@
-import ReactDom from 'react-dom'
-import React from 'react'
+import ReactDom from "react-dom";
+import React from "react";
+import {
+  useQuery,
+  useMutation,
+  useQueryClient,
+  QueryClient,
+  QueryClientProvider,
+} from "react-query";
+import { WindowStoreProvider } from "./store";
+import { AppRoutes } from "./routes";
 
-import { WindowStoreProvider } from './store'
-import { AppRoutes } from './routes'
+const queryClient = new QueryClient({
+  defaultOptions: {
+    queries: {
+      refetchOnWindowFocus: false,
+      staleTime: 0,
+      cacheTime: 0,
+      retry: false,
+    },
+  },
+});
 
-import './style.css'
+import "./style.css";
 
 ReactDom.render(
   <React.StrictMode>
     <WindowStoreProvider>
-      <AppRoutes />
+      <QueryClientProvider client={queryClient}>
+        <AppRoutes />
+      </QueryClientProvider>
     </WindowStoreProvider>
   </React.StrictMode>,
-  document.querySelector('app')
-)
+  document.querySelector("app")
+);
