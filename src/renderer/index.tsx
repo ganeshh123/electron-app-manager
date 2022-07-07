@@ -1,9 +1,6 @@
 import ReactDom from "react-dom";
 import React from "react";
 import {
-  useQuery,
-  useMutation,
-  useQueryClient,
   QueryClient,
   QueryClientProvider,
 } from "react-query";

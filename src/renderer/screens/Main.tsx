@@ -1,21 +1,25 @@
-import { useNavigate } from 'react-router-dom'
-import { useWindowStore } from 'renderer/store'
-import { Container } from 'renderer/components'
+import { Layout, Typography } from 'antd'
 
-export function MainScreen() {
-  const { App } = window // The "App" comes from the bridge
+export const Main = () => {
 
-  const navigate = useNavigate()
-  const store = useWindowStore().about
-
-  function openAboutWindow() {
-    App.createAboutWindow()
-    store.setAboutWindowState(true)
-  }
+  const { Header, Content, Footer, Sider } = Layout
+  const { Title } = Typography
 
   return (
-    <Container>
-      <h1>Hello</h1>
-    </Container>
+    <Layout>
+      <Header>
+        <Title>
+          Electron App Manager
+        </Title>
+      </Header>
+      <Layout style={{ display: 'flex', flexDirection: 'row' }}>
+        <Sider width={200}>
+
+        </Sider>
+        <Content>
+        </Content>
+      </Layout>
+    </Layout>
+
   )
 }
