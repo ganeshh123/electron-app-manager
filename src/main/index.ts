@@ -9,3 +9,5 @@ makeAppWithSingleInstanceLock(async () => {
 
   registerAboutWindowCreationByIPC()
 })
+
+export * from './utils'
